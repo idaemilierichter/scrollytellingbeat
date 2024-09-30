@@ -3,13 +3,46 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import thebeatles from "../assets/images/thebeatles.jpg";
+import thecavernclub from "../assets/images/thecavernclub.jpg";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
+<MainLayout 
+title="Historien om musikgenren British Beat"
+description="Læs om British Beat-bevægelsens oprindelse, dens indflydelse på musik og kultur, samt hvordan bands som The Beatles førte an i 'The British Invasion'."
+ogtitle="Læs mere om British Beat"
+ogdescription="Udforsk British Beat-bevægelsens oprindelse og indflydelse på musikken med The Beatles og andre ikoniske bands."
+>
+	<article class="grid mx-auto container gap-8 pt-8 prose">
+<h1>Historien om musikgenren British Beat</h1>
+		<section>
+			<h2>Oprindelsen af British Beat</h2>
+			<p>British Beat, også kendt som Merseybeat, opstod i Storbritannien i begyndelsen af 1960'erne. Bevægelsen var centreret omkring Liverpool og var en del af den britiske ungdomskultur, som ønskede at skabe deres egen musikalske identitet. Inspireret af amerikansk rock 'n' roll, rhythm and blues samt skiffle-musik, udviklede bands som The Beatles, Gerry and the Pacemakers, og The Searchers deres unikke lyd, der blandede popmelodier med rå energi og enkle instrumenteringer. Den musikalske scene i Liverpool voksede hurtigt, og byen blev kendt som et centrum for musikkultur i hele England.</p>
+		<p>“Liverpool var en musikalsk gryde, og de unge musikere hentede inspiration fra både USA og hinanden,” siger musikhistoriker Spencer Leigh.</p>
+		<Image src={thebeatles} alt="The Beatles vinker"></Image>
+	</section>
+
+	<section>
+		<h2>“The British Invasion”</h2>
+		<p>British Beat blev hurtigt en global bevægelse og markerede starten på "The British Invasion" i midten af 1960'erne. Bands som The Beatles, The Rolling Stones og The Kinks førte an i denne bølge af britisk musik, der tog USA med storm. I 1964 blev The Beatles’ "I Want to Hold Your Hand" nummer 1 på de amerikanske hitlister, og det åbnede dørene for mange andre britiske bands. Fra 1964 til 1966 dominerede britiske kunstnere de internationale hitlister, og amerikansk rock 'n' roll blev pludselig udfordret af denne nye, britiske version.</p>
+	</section>
+
+	<section>
+		<h2>Beatens indflydelse på musik og kultur</h2>
+		<p>British Beat ændrede ikke kun musikken, men også ungdomskulturen. Beat-bands inspirerede ungdommen til at udtrykke sig på nye måder, både gennem musik, mode og holdninger. De lange frisurer og den afslappede, nonchalante stil hos musikere som The Beatles og The Rolling Stones blev hurtigt populære blandt teenagere. Beatens musik, der ofte indeholdt tekster om ungdommens liv og udfordringer, appellerede direkte til en generation, der søgte frihed fra traditionelle værdier.</p>
+	<p>"Vi var ikke bare musikere. Vi var talspersoner for en generation," sagde Paul McCartney fra The Beatles i et interview fra 1976.</p>
+	<Image src={thecavernclub} alt="Interiør fra The Cavern Club"></Image>
+</section>
+
+	<section>
+		<h2>Eftermælet af British Beat </h2>
+		<p>Selvom British Beat-bevægelsen mistede sin dominans sidst i 1960'erne, har den efterladt et varigt aftryk på musikverdenen. Mange moderne musikgenrer, såsom britpop og indierock, er direkte påvirket af beat-musikkens simple melodier og oprørske ånd. Bands som Oasis og Blur hylder ofte de klassiske beat-artister som en stor inspiration. Selv i dag, over 60 år senere, fortsætter musikelskere over hele verden med at lytte til og værdsætte musikken fra den britiske beatæra.
+		</p>
+		<p>Ifølge BBC’s musikjournalist Mark Savage, "British Beat banede vejen for hele den britiske musikindustri og gjorde det muligt for britiske kunstnere at få international succes."</p>
+	</section>
+
 	</article>
+
 </MainLayout>
+
+<Button>Klik!</Button>
+<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
