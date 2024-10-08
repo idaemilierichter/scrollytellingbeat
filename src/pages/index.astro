@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import { Image } from 'astro:assets';
 import thebeatles from "../assets/images/thebeatles.jpg";
 import thecavernclub from "../assets/images/thecavernclub.jpg";
+import hero from "../assets/images/herobritimg.png";
 ---
 <MainLayout 
 title="Historien om musikgenren British Beat"
@@ -10,6 +11,9 @@ description="Læs om British Beat-bevægelsens oprindelse, dens indflydelse på 
 ogtitle="Læs mere om British Beat"
 ogdescription="Udforsk British Beat-bevægelsens oprindelse og indflydelse på musikken med The Beatles og andre ikoniske bands."
 >
+<section>
+	<Image src={hero} alt="The Beatles vinker"></Image>
+</section>
 	<article class="grid mx-auto container gap-8 pt-8 mb-10 mt-10 prose">
 <h1>Historien om musikgenren British Beat</h1>
 		<section>
